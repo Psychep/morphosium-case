@@ -22,7 +22,7 @@ import { useDispatch } from "react-redux";
 export default function Layout() {
   const isLoggedIn = useIsLoggedIn();
   const currentUser = useCurrentUser();
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [anchorEl, setAnchorEl] = useState(false);
   const [profileDialogOpen, setProfileDialogOpen] = useState(false);
   const dispatch = useDispatch();
   const [confrimSignOutDialogOpen, setConfrimSignOutDialogOpen] =
